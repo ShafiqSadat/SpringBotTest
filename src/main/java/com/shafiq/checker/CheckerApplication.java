@@ -26,10 +26,14 @@ public class CheckerApplication {
         SpringApplication.run(CheckerApplication.class, args);
     }
 
-    @GetMapping
+    @GetMapping("/ban")
     public String sayHello(@RequestParam("phone") String phone,@RequestParam("session") String session,@RequestParam("API_ID") String API_ID,@RequestParam("API_HASH") String API_HASH){
         status = getStatus(phone,session,API_ID,API_HASH);
         return status;
+    }
+    @GetMapping
+    public String sayHello(){
+        return "Hello WORLD!";
     }
 
 
