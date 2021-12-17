@@ -2,7 +2,7 @@ plugins {
     id 'org.springframework.boot' version '2.6.1'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
-    id 'org.springframework.experimental.aot' version '0.11.0'
+//    id 'org.springframework.experimental.aot' version '0.11.0'
 }
 
 group = 'com.shafiq'
@@ -23,22 +23,22 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-data-redis-reactive'
+//    implementation 'org.springframework.boot:spring-boot-starter-data-redis-reactive'
     implementation 'org.springframework.boot:spring-boot-starter-data-rest'
     implementation 'org.springframework.boot:spring-boot-starter-quartz'
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     compileOnly 'org.projectlombok:lombok'
-    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+//    developmentOnly 'org.springframework.boot:spring-boot-devtools'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     annotationProcessor 'org.projectlombok:lombok'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testImplementation 'io.projectreactor:reactor-test'
-//    implementation platform('it.tdlight:tdlight-java-bom:2.7.10.8')
-//
-//    // do not specify the versions on the dependencies below!
-//    implementation 'it.tdlight:tdlight-java'
-//    implementation 'it.tdlight:tdlight-natives-linux-amd64'
-//    implementation 'it.tdlight:tdlight-natives-windows-amd64'
+//    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+//    testImplementation 'io.projectreactor:reactor-test'
+    implementation platform('it.tdlight:tdlight-java-bom:2.7.10.8')
+
+    // do not specify the versions on the dependencies below!
+    implementation 'it.tdlight:tdlight-java'
+    implementation 'it.tdlight:tdlight-natives-linux-amd64'
+    implementation 'it.tdlight:tdlight-natives-windows-amd64'
 }
 
 test {
