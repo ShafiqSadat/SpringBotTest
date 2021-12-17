@@ -45,7 +45,9 @@ dependencies {
     // do not specify the versions on the dependencies below!
     implementation 'it.tdlight:tdlight-java'
     implementation 'it.tdlight:tdlight-natives-linux-amd64'
-    implementation 'it.tdlight:tdlight-natives-windows-amd64'
+    implementation 'it.tdlight:tdlight-natives-linux-aarch64'
+    implementation 'it.tdlight:tdlight-natives-linux-x86'
+//    implementation 'it.tdlight:tdlight-natives-windows-amd64'
 }
 
 test {
