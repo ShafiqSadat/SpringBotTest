@@ -1,24 +1,15 @@
 package com.shafiq.checker;
 
-import it.tdlight.client.*;
-import it.tdlight.common.Init;
-import it.tdlight.common.utils.CantLoadLibrary;
-import it.tdlight.jni.TdApi;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.io.File;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.function.Consumer;
-
 @SpringBootApplication
 @RestController
 public class CheckerApplication {
-    private static SimpleTelegramClient client;
+//    private static SimpleTelegramClient client;
     private static String text;
     static String sess = "";
     static String status = "NOT_BANNED!";
