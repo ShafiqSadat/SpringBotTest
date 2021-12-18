@@ -47,7 +47,6 @@ dependencies {
     implementation 'it.tdlight:tdlight-natives-linux-amd64'
     implementation 'it.tdlight:tdlight-natives-linux-aarch64'
     implementation 'it.tdlight:tdlight-natives-linux-x86'
-    implementation 'it.tdlight:tdlight-natives-linux-s390x'
     implementation 'it.tdlight:tdlight-natives-linux-armhf'
 //    implementation 'it.tdlight:tdlight-natives-linux-armv6'
 //    implementation 'it.tdlight:tdlight-natives-linux-armv7'
